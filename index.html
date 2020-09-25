@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Big Momma Crypto Kitty</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="display-4">Big Momma Crypto Kitty!</h1>
+            <div id="img-container">
+                <img src="spiral.png" id="spiral">
+                <img src="kitty.png">
+                <img src="spiral.png" id="spiral">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+
+        </div>
+        <div class="column middle" s>
+            <div class="container">
+                <div>
+                    <h2>Enter the starting and ending block!</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="start-input" placeholder="Starting block" aria-label="start" aria-describedby="start-input">
+                        <input type="text" class="form-control" id="end-input" placeholder="Ending block" aria-label="end" aria-describedby="end-input">
+                        <button id="submit-button">Find big kitty!</button>
+                    </div>
+                    <div class="result-container">
+                        <h4 id="result-count"></h4>
+                        <ul id="result-list">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column side"></div>
+    </div>
+    <div class="modal">
+        <!-- Place at bottom of page -->
+        <h1 id="load-message"> Please wait while we get the kitty! Could take a couple minutesz</h1>
+    </div>
+</body>
